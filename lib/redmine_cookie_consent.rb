@@ -18,13 +18,15 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
-require_dependency 'redmine_cookie_consent'
-
-Redmine::Plugin.register :redmine_cookie_consent do
-  name 'Redmine Cookie Consent plugin'
-  author 'Liane Hampe, xmera'
-  description 'Alert users about the use of cookies in Redmine'
-  version '0.0.1'
-  url 'https://circle.xmera.de/redmine-cookie-consent'
-  author_url 'https://circle.xmera.de/'
+##
+# Use the call hook in the head section of Redmine's base layout
+# to inject the required javascript and css files for displaying the
+# cookie banner.
+#
+module RedmineCookieConsent
+  # Simple Hook Listener to render on Redmine's call hooks
+  class HookListener < Redmine::Hook::ViewListener
+    render_on :view_layouts_base_html_head,
+              partial: 'redmine_cookie_consent/base_html_head'
+  end
 end
