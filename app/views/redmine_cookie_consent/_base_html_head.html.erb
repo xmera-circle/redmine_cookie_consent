@@ -19,6 +19,7 @@
 
 
 <%= stylesheet_link_tag 'cookieconsent.min', plugin: 'redmine_cookie_consent' %>
+<%= stylesheet_link_tag 'cookie_consent', plugin: 'redmine_cookie_consent' %>
 <%= javascript_include_tag('cookieconsent.min', plugin: 'redmine_cookie_consent') %>
 
 <%= javascript_tag do %>
@@ -26,12 +27,12 @@
   window.cookieconsent.initialise({
   "palette": {
     "popup": {
-    "background": "#3E5B76",
-    "text": "#ffffff"
+    "background": "#fff",
+    "text": "#000"
     },
   "button": {
-    "background": "#628DB6",
-    "text": "#f8f8f8"
+    "background": "#a8a7a7",
+    "text": "#fff"
     }
   },
   "position": "bottom-left",
