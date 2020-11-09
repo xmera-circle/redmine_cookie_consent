@@ -1,0 +1,7 @@
+# English strings go here for Rails i18n
+de:
+  cookie_consent_message: "Wir verwenden Cookies. Sie sind technisch notwendig und werden gelöscht, sobald Sie den Browser schließen!"
+  cookie_consent_header: "Cookies auf dieser Webseite"
+  cookie_consent_button_dismiss: "OK"
+  cookie_consent_link: "Mehr erfahren"
+  cookie_consent_href: "https://de.wikipedia.org/wiki/HTTP_Cookie"
