@@ -35,11 +35,11 @@ window.cookieconsent.initialise({
 },
 "position": "bottom-left",
 "content": {
-"header": "<%= ll(current_language, :cookie_consent_header) %>",
-"message": "<%= ll(current_language, :cookie_consent_message) %>",
-"dismiss": "<%= ll(current_language, :cookie_consent_button_dismiss) %>",
-"link": "<%= ll(current_language, :cookie_consent_link) %>",
-"href": "<%= ll(current_language, :cookie_consent_href) %>"
+"header": "<%= lu(User.current, :cookie_consent_header) %>",
+"message": "<%= lu(User.current, :cookie_consent_message) %>",
+"dismiss": "<%= lu(User.current, :cookie_consent_button_dismiss) %>",
+"link": "<%= lu(User.current, :cookie_consent_link) %>",
+"href": "<%= lu(User.current, :cookie_consent_href) %>"
 },
 dismissOnScroll: 75
 })});
