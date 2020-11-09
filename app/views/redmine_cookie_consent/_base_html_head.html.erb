@@ -17,31 +17,30 @@
 # along with this program; if not, see <http://www.gnu.org/licenses/>.
 %>
 
-
 <%= stylesheet_link_tag 'cookieconsent.min', plugin: 'redmine_cookie_consent' %>
 <%= javascript_include_tag('cookieconsent.min', plugin: 'redmine_cookie_consent') %>
 
 <%= javascript_tag do %>
-  window.addEventListener("load", function(){
-  window.cookieconsent.initialise({
-  "palette": {
-    "popup": {
-    "background": "#3E5B76",
-    "text": "#ffffff"
-    },
-  "button": {
-    "background": "#628DB6",
-    "text": "#f8f8f8"
-    }
-  },
-  "position": "bottom-left",
-  "content": {
-    "header": "Cookies on this website",
-    "message": "We use session cookies. They are technically essential and will be deleted after closing your browser!",
-    "dismiss": "Ok",
-    "link": "learn more",
-    "href": "https://en.wikipedia.org/wiki/HTTP_cookie#Session_cookie"
-  },
-  dismissOnScroll: 75
-  })});
+window.addEventListener("load", function(){
+window.cookieconsent.initialise({
+"palette": {
+"popup": {
+"background": "#3E5B76",
+"text": "#ffffff"
+},
+"button": {
+"background": "#628DB6",
+"text": "#f8f8f8"
+}
+},
+"position": "bottom-left",
+"content": {
+"header": "<%= ll(current_language, :cookie_consent_header) %>",
+"message": "<%= ll(current_language, :cookie_consent_message) %>",
+"dismiss": "<%= ll(current_language, :cookie_consent_button_dismiss) %>",
+"link": "<%= ll(current_language, :cookie_consent_link) %>",
+"href": "<%= ll(current_language, :cookie_consent_href) %>"
+},
+dismissOnScroll: 75
+})});
 <% end %>
