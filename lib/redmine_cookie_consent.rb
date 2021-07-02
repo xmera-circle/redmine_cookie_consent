@@ -2,7 +2,7 @@
 
 # This file is part of the plugin Redmine Cookie Consent.
 #
-# Copyright (C) 2020 Liane Hampe <liane.hampe@xmera.de>, xmera.
+# Copyright (C) 2020-2021 Liane Hampe <liane.hampe@xmera.de>, xmera.
 #
 # This plugin program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License

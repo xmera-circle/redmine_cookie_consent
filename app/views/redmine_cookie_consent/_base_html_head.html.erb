@@ -1,25 +1,10 @@
-<%
-# This file is part of the plugin Redmine Cookie Consent.
-#
-# Copyright (C) 2020 Liane Hampe <liane.hampe@xmera.de>.
-#
-# This program is free software; you can redistribute it and/or
-# modify it under the terms of the GNU General Public License
-# as published by the Free Software Foundation; either version 2
-# of the License, or (at your option) any later version.
-#
-# This program distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-# GNU General Public License for more details.
-#
-# You should have received a copy of the GNU General Public License
-# along with this program; if not, see <http://www.gnu.org/licenses/>.
-%>
+<%= stylesheet_link_tag 'cookieconsent.min' , plugin: 'redmine_cookie_consent' %>
+  <%= javascript_include_tag('cookieconsent.min', plugin: 'redmine_cookie_consent' ) %>
 
-<%= stylesheet_link_tag 'cookieconsent.min', plugin: 'redmine_cookie_consent' %>
-<%= javascript_include_tag('cookieconsent.min', plugin: 'redmine_cookie_consent') %>
+    <%= javascript_tag do %>
+      window.addEventListener("load", function(){
 
+<<<<<<< HEAD
 <%= javascript_tag do %>
 window.addEventListener("load", function(){
 window.cookieconsent.initialise({
@@ -44,3 +29,32 @@ window.cookieconsent.initialise({
 dismissOnScroll: 75
 })});
 <% end %>
+=======
+      window.cookieconsent.initialise({
+      "palette": {
+      "popup": {
+      "background": "#ffffff",
+      "text": "#000000"
+      },
+      "button": {
+      "background": "#a8a7a7",
+      "text": "#ffffff"
+      }
+      },
+      "position": "bottom-left",
+      "cookie": {
+      "domain": "<%= request.host %>",
+        "secure": true,
+        "expiryDays": 90,
+        },
+        "content": {
+        "header": "<%= lu(User.current, :cookie_consent_header) %>",
+          "message": "<%= lu(User.current, :cookie_consent_message) %>",
+            "dismiss": "<%= lu(User.current, :cookie_consent_button_dismiss) %>",
+              "link": "<%= lu(User.current, :cookie_consent_link) %>",
+                "href": "<%= lu(User.current, :cookie_consent_href) %>"
+                  },
+                  dismissOnScroll: 70
+                  })});
+                  <% end %>
+>>>>>>> add_system_tests

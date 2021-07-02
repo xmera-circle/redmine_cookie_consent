@@ -1,6 +1,6 @@
 # English strings go here for Rails i18n
 en:
-  cookie_consent_message: "We use session cookies. They are technically essential and will be deleted after closing your browser!"
+  cookie_consent_message: "We use technically essential cookies only!"
   cookie_consent_header: "Cookies on this website"
   cookie_consent_button_dismiss: "OK"
   cookie_consent_link: "learn more"
