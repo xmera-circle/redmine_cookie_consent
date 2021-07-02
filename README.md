@@ -2,7 +2,7 @@
 
 Provide legal notes about your Redmine service
 
-![Redmine Plugin Version](https://img.shields.io/badge/Redmine_Plugin-v0.0.1-red) ![Redmine Version](https://img.shields.io/badge/Redmine-v4.x.x-blue) ![Language Support](https://img.shields.io/badge/Languages-en,_de-green) ![Version Stage](https://img.shields.io/badge/Stage-release-important)
+![Redmine Plugin Version](https://img.shields.io/badge/Redmine_Plugin-v0.0.3-red) ![Redmine Version](https://img.shields.io/badge/Redmine-v4.x.x-blue) ![Language Support](https://img.shields.io/badge/Languages-en,_de-green) ![Version Stage](https://img.shields.io/badge/Stage-release-important)
 
 Redmine Cookie Consent is a plugin which informs your visitors about the usage of cookies in your Redmine instance.
 
