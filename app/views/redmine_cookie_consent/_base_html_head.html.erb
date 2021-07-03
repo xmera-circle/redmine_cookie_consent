@@ -3,33 +3,6 @@
 
     <%= javascript_tag do %>
       window.addEventListener("load", function(){
-
-<<<<<<< HEAD
-<%= javascript_tag do %>
-window.addEventListener("load", function(){
-window.cookieconsent.initialise({
-"palette": {
-"popup": {
-"background": "#fff",
-"text": "#000"
-},
-"button": {
-"background": "#a8a7a7",
-"text": "#fff"
-}
-},
-"position": "bottom-left",
-"content": {
-"header": "<%= lu(User.current, :cookie_consent_header) %>",
-"message": "<%= lu(User.current, :cookie_consent_message) %>",
-"dismiss": "<%= lu(User.current, :cookie_consent_button_dismiss) %>",
-"link": "<%= lu(User.current, :cookie_consent_link) %>",
-"href": "<%= lu(User.current, :cookie_consent_href) %>"
-},
-dismissOnScroll: 75
-})});
-<% end %>
-=======
       window.cookieconsent.initialise({
       "palette": {
       "popup": {
@@ -57,4 +30,3 @@ dismissOnScroll: 75
                   dismissOnScroll: 70
                   })});
                   <% end %>
->>>>>>> add_system_tests
