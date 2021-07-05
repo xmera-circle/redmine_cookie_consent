@@ -51,5 +51,4 @@ class CookieConsentTest < ApplicationSystemTestCase
     page.find('a.cc-btn.cc-dismiss').click
     assert page.has_no_selector?('span#cookieconsent\\:desc')
   end
-
 end
