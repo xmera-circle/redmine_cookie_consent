@@ -25,6 +25,7 @@ Redmine::Plugin.register :redmine_cookie_consent do
   author 'Liane Hampe, xmera'
   description 'Inform users about the use of cookies in Redmine'
   version '0.0.3'
+
   url 'https://circle.xmera.de/redmine-cookie-consent'
   author_url 'https://circle.xmera.de/users/5'
 end
