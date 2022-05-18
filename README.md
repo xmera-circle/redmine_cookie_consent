@@ -2,13 +2,19 @@
 
 Provide legal notes about your Redmine service
 
-![Redmine Plugin Version](https://img.shields.io/badge/Redmine_Plugin-v0.0.3-red) ![Redmine Version](https://img.shields.io/badge/Redmine-v4.x.x-blue) ![Language Support](https://img.shields.io/badge/Languages-en,_de-green) ![Version Stage](https://img.shields.io/badge/Stage-release-important)
+![Redmine Plugin Version](https://img.shields.io/badge/Redmine_Plugin-v0.0.5-red) ![Redmine Version](https://img.shields.io/badge/Redmine-v4.x.x-blue) ![Language Support](https://img.shields.io/badge/Languages-en,_de-green) ![Version Stage](https://img.shields.io/badge/Stage-release-important)
 
 Redmine Cookie Consent is a plugin which informs your visitors about the usage of cookies in your Redmine instance.
 
 ---
 
-More information and screenshots can be found at [xmera Circle - the  community website of xmera](https://circle.xmera.de).
+## Context Information
+
+This plugin is part of a plugin selection aiming to provide the information security management system solution xmera Omnia.
+
+All plugins in the selection are compatible with [Redmine 4](https://redmine.org).
+
+More information about xmera Omnia can be found at [xmera](https://xmera.de).
 
 ## Installation
 
@@ -22,7 +28,7 @@ All notable changes to this plugin will be reported in the [changelog](https://c
 
 ## Licence
 
-Copyright (C) 2020-2021 Liane Hampe (<liaham@xmera.de>), xmera.
+Copyright (C) 2020-2022 Liane Hampe (<liaham@xmera.de>), xmera.
 
 This plugin program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License

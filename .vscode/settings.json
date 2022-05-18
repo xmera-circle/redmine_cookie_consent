@@ -10,5 +10,6 @@
   "ruby.rubocop.configFilePath": ".rubocop.yml",
   "ruby.lint": {
     "reek": true
-  }
+  },
+  "rubyTestExplorer.debuggerPort": "3041"
 }
