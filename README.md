@@ -8,7 +8,13 @@ Redmine Cookie Consent is a plugin which informs your visitors about the usage o
 
 ---
 
-More information and screenshots can be found at [xmera Circle - the  community website of xmera](https://circle.xmera.de).
+## Context Information
+
+This plugin is part of a plugin selection aiming to provide the information security management system solution xmera Omnia.
+
+All plugins in the selection are compatible with [Redmine 4](https://redmine.org).
+
+More information about xmera Omnia can be found at [xmera](https://xmera.de).
 
 ## Installation
 
@@ -22,7 +28,7 @@ All notable changes to this plugin will be reported in the [changelog](https://c
 
 ## Licence
 
-Copyright (C) 2020-2021 Liane Hampe (<liaham@xmera.de>), xmera.
+Copyright (C) 2020-2022 Liane Hampe (<liaham@xmera.de>), xmera.
 
 This plugin program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
