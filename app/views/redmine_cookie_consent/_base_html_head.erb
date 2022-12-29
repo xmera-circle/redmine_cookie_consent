@@ -1,0 +1,44 @@
+<%= stylesheet_link_tag 'cookieconsent.min' , plugin: 'redmine_cookie_consent' %>
+<%= stylesheet_link_tag 'cookie_consent' , plugin: 'redmine_cookie_consent' %>
+<%= javascript_include_tag('cookieconsent.min', plugin: 'redmine_cookie_consent' ) %>
+
+<%= javascript_tag do %>
+  const palettes = {
+    redmine: { "popup": { "background": "#3E5B76", "text": "#fff"  }, "button": { "background": '#628DB6', "text": "#f8f8f8"} },
+    corporate: { "popup": { "background": "#fff", "text": "#000" }, "button": { "background": "#a8a7a7", "text": "#fff"} }
+  };
+  const corporate_themes = [ 'Circle', 'Maodo', 'Omnia']
+  let current_palette = palettes.redmine
+  
+  if (corporate_themes.includes("<%= current_theme&.name.to_s %>")){
+    current_palette = palettes.corporate
+  }
+
+  window.addEventListener("load", function(){
+    const cc = new CookieConsent({
+      type: 'info',
+      palette: current_palette,
+      position: "bottom-left",
+      cookie: {
+        domain: "<%= request.host %>",
+        secure: <%= Rails.env.production? ? true : false %>,
+        expiryDays: 365,
+        sameSite: "Lax"
+      },
+      content: {
+        header: "<%= lu(User.current, :cookie_consent_header) %>",
+        message: "<%= lu(User.current, :cookie_consent_message) %>",
+        link: {
+          title: "<%= lu(User.current, :cookie_consent_title) %>",
+          text: "<%= lu(User.current, :cookie_consent_link) %>",
+          href: "<%= lu(User.current, :cookie_consent_href) %>",
+          target: '_blank'
+        },
+        buttons: {
+          dismiss: "<%= lu(User.current, :cookie_consent_button_dismiss) %>"
+        }
+      },
+      dismissOnScroll: 70
+    })
+  })
+<% end %>
