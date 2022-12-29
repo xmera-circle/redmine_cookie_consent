@@ -32,7 +32,7 @@ class CookieConsentTest < ApplicationSystemTestCase
   test 'anonymous user should be able to use cookie consent' do
     visit home_path
     assert page.has_selector?('span#cookieconsent\\:desc')
-    page.find('a.cc-btn.cc-dismiss').click
+    page.find('a.cc-btn.cc-DISMISS').click
     assert page.has_no_selector?('span#cookieconsent\\:desc')
   end
 
@@ -40,7 +40,7 @@ class CookieConsentTest < ApplicationSystemTestCase
     log_user 'admin', 'admin'
     visit home_path
     assert page.has_selector?("span#cookieconsent\\:desc")
-    page.find('a.cc-btn.cc-dismiss').click
+    page.find('a.cc-btn.cc-DISMISS').click
     assert page.has_no_selector?('span#cookieconsent\\:desc')
   end
 
@@ -48,7 +48,7 @@ class CookieConsentTest < ApplicationSystemTestCase
     log_user 'jsmith', 'jsmith'
     visit home_path
     assert page.has_selector?("span#cookieconsent\\:desc")
-    page.find('a.cc-btn.cc-dismiss').click
+    page.find('a.cc-btn.cc-DISMISS').click
     assert page.has_no_selector?('span#cookieconsent\\:desc')
   end
 
