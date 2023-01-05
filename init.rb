@@ -2,7 +2,7 @@
 
 # This file is part of the plugin Redmine Cookie Consent.
 #
-# Copyright (C) 2020-2022 Liane Hampe <liane.hampe@xmera.de>, xmera.
+# Copyright (C) 2020-2023 Liane Hampe <liane.hampe@xmera.de>, xmera Solutions GmbH.
 #
 # This plugin program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -18,14 +18,13 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
 
-require_dependency 'redmine_cookie_consent'
+require File.expand_path('lib/redmine_cookie_consent', __dir__)
 
 Redmine::Plugin.register :redmine_cookie_consent do
   name 'Redmine Cookie Consent plugin'
-  author 'Liane Hampe, xmera'
+  author 'Liane Hampe, xmera Solutions GmbH'
   description 'Inform users about the use of cookies in Redmine'
-  version '0.0.5'
-
+  version '0.1.0'
   url 'https://circle.xmera.de/redmine-cookie-consent'
   author_url 'https://circle.xmera.de/users/5'
 end
