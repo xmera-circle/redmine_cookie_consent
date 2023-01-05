@@ -66,7 +66,7 @@ In case you like to improve the code, please create a pull request on GitHub. Bi
 
 ## Licence
 
-Copyright (C) 2020-2023 Liane Hampe (<liaham@xmera.de>), xmera.
+Copyright (C) 2020-2023 Liane Hampe (<liaham@xmera.de>), xmera Solutions GmbH.
 
 This plugin program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
