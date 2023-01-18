@@ -41,7 +41,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * some system tests
 
-
 ## 0.0.2 - 2020-01-19
 
 ### Changed
@@ -52,7 +51,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 
 * language to change with the user's default language
-
 
 ## 0.0.1 - 2020-11-23
 

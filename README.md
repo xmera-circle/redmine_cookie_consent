@@ -22,7 +22,7 @@ git clone -b master https://github.com/xmera-circle/redmine_cookie_consent
 
 You need a running Redmine instance in order to install the plugin. If you need help with the installation, please refer to [Redmine.org](https://redmine.org).
 
-Instructions for the installation of this plugin can be found in the [official documentation wiki](https://circle.xmera.de/projects/redmine-legal-notes/wiki/Documentation).
+Instructions for the installation of this plugin can be found in the [official documentation wiki](https://circle.xmera.de/projects/redmine-cookie-consent/wiki/Documentation).
 
 ## Changelog
 
