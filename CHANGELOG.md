@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 * github workflow for running tests
+* pull request template
 
 ## 0.1.1 - 2023-01-18
 
