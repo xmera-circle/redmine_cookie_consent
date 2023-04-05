@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 * bug-report template
 
+### Added
+
+* github workflow for running tests
+
 ## 0.1.1 - 2023-01-18
 
 ### Changed
